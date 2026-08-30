@@ -1,0 +1,105 @@
+plugins {
+    id 'java'
+    id 'net.neoforged.moddev' version '2.0.143'
+}
+
+version = mod_version
+group = mod_group
+
+base {
+    archivesName = archives_name
+}
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(Integer.parseInt(java_version))
+}
+
+neoForge {
+    version = neoforge_version
+
+    interfaceInjectionData.from(file('libs/geckolib/interface_injections.json'))
+
+    runs {
+        configureEach {
+            systemProperty 'neoforge.enabledGameTestNamespaces', mod_id
+            logLevel = org.slf4j.event.Level.DEBUG
+            disableIdeRun()
+        }
+        client {
+            client()
+        }
+        server {
+            server()
+            programArgument '--nogui'
+            gameDirectory = file('run/server')
+        }
+    }
+
+    mods {
+        "$mod_id" {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+    flatDir { dirs 'libs' }
+
+    maven {
+        name = 'GeckoLib'
+        url = 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+    }
+    maven {
+        name = "Jared's maven"
+        url = "https://maven.blamejared.com/"
+    }
+    maven {
+        name = "ModMaven"
+        url = "https://modmaven.dev"
+    }
+    maven {
+        name = "Modrinth"
+        url = "https://api.modrinth.com/maven"
+    }
+    maven { url "https://maven.shedaniel.me" }
+}
+
+dependencies {
+    implementation "com.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_version}"
+    implementation files(animatehitboxes_jar)
+
+    jarJar('com.zavidvi:animatehitboxes-neoforge-26.1.2:0.1.0')
+
+    compileOnly("mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}")
+    compileOnly("me.shedaniel:RoughlyEnoughItems-api-neoforge:${rei_version}")
+    compileOnly("me.shedaniel.cloth:cloth-config-neoforge:26.1.154")
+
+    runtimeOnly("mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}")
+    runtimeOnly ("maven.modrinth:better-advancements:8Hsu82sg")
+}
+
+sourceSets.main.java {
+}
+
+tasks.named('processResources', ProcessResources).configure {
+    def props = [
+            mod_id                 : mod_id,
+            version                : project.version,
+            minecraft_version_range: minecraft_version_range,
+            neoforge_version_range : neoforge_version_range,
+            geckolib_version       : geckolib_version
+    ]
+    inputs.properties(props)
+    filesMatching(['META-INF/neoforge.mods.toml']) {
+        expand props
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+jar {
+    archiveFileName = "${archives_name}-${minecraft_version}-${mod_version}.jar"
+}

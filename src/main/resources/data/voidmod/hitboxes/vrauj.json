@@ -1,0 +1,25 @@
+{
+	"elements": [
+		{
+			"name": "everyone",
+			"pos": [-1.25, -6, -13],
+			"width": 14,
+			"height": 14,
+			"ref": "everyone_hitbox"
+		},
+		{
+			"name": "everyone1",
+			"pos": [-2.25, -6, 0],
+			"width": 12,
+			"height": 12,
+			"ref": "everyone1_hitbox"
+		},
+		{
+			"name": "everyone2",
+			"pos": [-2.25, -6, 12],
+			"width": 12,
+			"height": 12,
+			"ref": "everyone2_hitbox"
+		}
+	]
+}

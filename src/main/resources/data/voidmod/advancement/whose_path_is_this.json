@@ -1,0 +1,32 @@
+{
+  "parent": "voidmod:path_of_the_marksman",
+  "criteria": {
+    "code": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "code"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:paper",
+      "components": {
+        "minecraft:item_model": "voidmod:advancement/whose_path_is_this"
+      }
+    },
+    "title": {
+      "translate": "advancements.voidmod.whose_path_is_this.title"
+    },
+    "description": {
+      "translate": "advancements.voidmod.whose_path_is_this.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "sends_telemetry_event": false
+}

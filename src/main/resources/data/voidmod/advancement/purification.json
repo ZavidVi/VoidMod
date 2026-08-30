@@ -1,0 +1,36 @@
+{
+  "parent": "voidmod:fountain_of_life",
+  "criteria": {
+    "got": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "voidmod:lightened_ingot"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "got"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "voidmod:lightened_ingot"
+    },
+    "title": {
+      "translate": "advancements.voidmod.purification.title"
+    },
+    "description": {
+      "translate": "advancements.voidmod.purification.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "sends_telemetry_event": false
+}

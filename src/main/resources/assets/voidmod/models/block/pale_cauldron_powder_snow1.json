@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/template_cauldron_level1",
+  "textures": {
+    "particle": "voidmod:block/pale_cauldron_side",
+    "top": "voidmod:block/pale_cauldron_top",
+    "bottom": "voidmod:block/pale_cauldron_bottom",
+    "side": "voidmod:block/pale_cauldron_side",
+    "inside": "voidmod:block/pale_cauldron_inner",
+    "content": "minecraft:block/powder_snow"
+  }
+}

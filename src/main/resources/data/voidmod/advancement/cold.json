@@ -1,0 +1,36 @@
+{
+  "parent": "voidmod:path_of_the_mage",
+  "criteria": {
+    "got": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#voidmod:magic_weapons"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "got"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "voidmod:rime"
+    },
+    "title": {
+      "translate": "advancements.voidmod.cold.title"
+    },
+    "description": {
+      "translate": "advancements.voidmod.cold.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "sends_telemetry_event": false
+}

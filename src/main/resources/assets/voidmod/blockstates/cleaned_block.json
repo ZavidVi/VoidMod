@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "voidmod:block/cleaned_block"
+    }
+  }
+}

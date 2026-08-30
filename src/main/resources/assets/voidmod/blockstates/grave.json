@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "voidmod:block/grave"
+    },
+    "facing=east": {
+      "model": "voidmod:block/grave"
+    },
+    "facing=south": {
+      "model": "voidmod:block/grave"
+    },
+    "facing=west": {
+      "model": "voidmod:block/grave"
+    }
+  }
+}

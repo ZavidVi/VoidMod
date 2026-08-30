@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "voidmod:pale"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "voidmod:pale"
+      }
+    ]
+  }
+}

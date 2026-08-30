@@ -1,0 +1,14 @@
+{
+  "type": "voidmod:essence_crafting",
+  "category": "equipment",
+  "pattern": [
+    "W W"
+  ],
+  "key": {
+    "W": "voidmod:lighted_wool"
+  },
+  "result": {
+    "id": "voidmod:lighted_sandals"
+  },
+  "essence": 3
+}

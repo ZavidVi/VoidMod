@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "voidmod:item/extramundane_forge",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

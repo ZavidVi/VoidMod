@@ -1,0 +1,36 @@
+{
+  "parent": "voidmod:legacy_of_the_void",
+  "criteria": {
+    "got": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "voidmod:cleaned_block"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "got"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "voidmod:cleaned_block"
+    },
+    "title": {
+      "translate": "advancements.voidmod.effort_wasnt_wasted.title"
+    },
+    "description": {
+      "translate": "advancements.voidmod.effort_wasnt_wasted.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "sends_telemetry_event": false
+}

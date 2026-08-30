@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "voidmod:supervoid",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "voidmod:cursed_random_spread",
+    "spacing": 32,
+    "separation": 10,
+    "salt": 573418902
+  }
+}

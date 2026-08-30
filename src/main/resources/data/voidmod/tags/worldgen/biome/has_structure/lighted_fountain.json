@@ -1,0 +1,34 @@
+{
+  "values": [
+    {
+      "id": "#minecraft:is_overworld",
+      "required": false
+    }
+  ],
+  "remove": [
+    {
+      "id": "#minecraft:is_ocean",
+      "required": false
+    },
+    {
+      "id": "#minecraft:is_deep_ocean",
+      "required": false
+    },
+    {
+      "id": "#minecraft:is_river",
+      "required": false
+    },
+    {
+      "id": "minecraft:lush_caves",
+      "required": false
+    },
+    {
+      "id": "minecraft:dripstone_caves",
+      "required": false
+    },
+    {
+      "id": "minecraft:deep_dark",
+      "required": false
+    }
+  ]
+}

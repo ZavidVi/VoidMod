@@ -1,0 +1,97 @@
+{
+  "variants": {
+    "content=empty": {
+      "model": "voidmod:block/pale_cauldron"
+    },
+    "content=lava": {
+      "model": "voidmod:block/pale_cauldron_lava"
+    },
+    "content=water,level=0": {
+      "model": "voidmod:block/pale_cauldron"
+    },
+    "content=powder_snow,level=0": {
+      "model": "voidmod:block/pale_cauldron"
+    },
+    "content=water,level=1": {
+      "model": "voidmod:block/pale_cauldron_water1"
+    },
+    "content=powder_snow,level=1": {
+      "model": "voidmod:block/pale_cauldron_powder_snow1"
+    },
+    "content=water,level=2": {
+      "model": "voidmod:block/pale_cauldron_water2"
+    },
+    "content=powder_snow,level=2": {
+      "model": "voidmod:block/pale_cauldron_powder_snow2"
+    },
+    "content=water,level=3": {
+      "model": "voidmod:block/pale_cauldron_water3"
+    },
+    "content=powder_snow,level=3": {
+      "model": "voidmod:block/pale_cauldron_powder_snow3"
+    },
+    "content=light_water,charges=0": {
+      "model": "voidmod:block/pale_cauldron"
+    },
+    "content=light_water,charges=1": {
+      "model": "voidmod:block/pale_cauldron_light_water1"
+    },
+    "content=light_water,charges=2": {
+      "model": "voidmod:block/pale_cauldron_light_water1"
+    },
+    "content=light_water,charges=3": {
+      "model": "voidmod:block/pale_cauldron_light_water1"
+    },
+    "content=light_water,charges=4": {
+      "model": "voidmod:block/pale_cauldron_light_water1"
+    },
+    "content=light_water,charges=5": {
+      "model": "voidmod:block/pale_cauldron_light_water1"
+    },
+    "content=light_water,charges=6": {
+      "model": "voidmod:block/pale_cauldron_light_water1"
+    },
+    "content=light_water,charges=7": {
+      "model": "voidmod:block/pale_cauldron_light_water1"
+    },
+    "content=light_water,charges=8": {
+      "model": "voidmod:block/pale_cauldron_light_water2"
+    },
+    "content=light_water,charges=9": {
+      "model": "voidmod:block/pale_cauldron_light_water2"
+    },
+    "content=light_water,charges=10": {
+      "model": "voidmod:block/pale_cauldron_light_water2"
+    },
+    "content=light_water,charges=11": {
+      "model": "voidmod:block/pale_cauldron_light_water2"
+    },
+    "content=light_water,charges=12": {
+      "model": "voidmod:block/pale_cauldron_light_water2"
+    },
+    "content=light_water,charges=13": {
+      "model": "voidmod:block/pale_cauldron_light_water2"
+    },
+    "content=light_water,charges=14": {
+      "model": "voidmod:block/pale_cauldron_light_water2"
+    },
+    "content=light_water,charges=15": {
+      "model": "voidmod:block/pale_cauldron_light_water3"
+    },
+    "content=light_water,charges=16": {
+      "model": "voidmod:block/pale_cauldron_light_water3"
+    },
+    "content=light_water,charges=17": {
+      "model": "voidmod:block/pale_cauldron_light_water3"
+    },
+    "content=light_water,charges=18": {
+      "model": "voidmod:block/pale_cauldron_light_water3"
+    },
+    "content=light_water,charges=19": {
+      "model": "voidmod:block/pale_cauldron_light_water3"
+    },
+    "content=light_water,charges=20": {
+      "model": "voidmod:block/pale_cauldron_light_water3"
+    }
+  }
+}

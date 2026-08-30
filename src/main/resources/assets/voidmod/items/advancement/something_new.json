@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "voidmod:item/advancement/something_new"
+  }
+}

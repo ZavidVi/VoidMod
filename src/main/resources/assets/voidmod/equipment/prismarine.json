@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "voidmod:prismarine"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "voidmod:prismarine"
+      }
+    ]
+  }
+}

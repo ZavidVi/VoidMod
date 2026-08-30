@@ -1,0 +1,14 @@
+{
+  "type": "voidmod:essence_crafting",
+  "category": "equipment",
+  "pattern": [
+    "S S"
+  ],
+  "key": {
+    "S": "minecraft:prismarine_shard"
+  },
+  "result": {
+    "id": "voidmod:prismarine_knee_pads"
+  },
+  "essence": 4
+}

@@ -1,0 +1,42 @@
+{
+  "parent": "voidmod:tale_of_cruel_world",
+  "criteria": {
+    "found": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structures": "voidmod:lighted_fountain"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "found"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "voidmod:light_water_bucket"
+    },
+    "title": {
+      "translate": "advancements.voidmod.fountain_of_life.title"
+    },
+    "description": {
+      "translate": "advancements.voidmod.fountain_of_life.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "sends_telemetry_event": false
+}

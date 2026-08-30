@@ -1,0 +1,18 @@
+{
+	"elements": [
+		{
+			"name": "top",
+			"pos": [0, 14, 0],
+			"width": 10,
+			"height": 19,
+			"ref": "top_hitbox"
+		},
+		{
+			"name": "bot",
+			"pos": [0, 0, 0],
+			"width": 10,
+			"height": 14,
+			"ref": "bot_hitbox"
+		}
+	]
+}

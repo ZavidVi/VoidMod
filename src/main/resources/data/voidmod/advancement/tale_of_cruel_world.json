@@ -1,0 +1,32 @@
+{
+  "parent": "voidmod:void_mode",
+  "criteria": {
+    "code": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "code"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:paper",
+      "components": {
+        "minecraft:item_model": "voidmod:advancement/tale_of_cruel_world"
+      }
+    },
+    "title": {
+      "translate": "advancements.voidmod.tale_of_cruel_world.title"
+    },
+    "description": {
+      "translate": "advancements.voidmod.tale_of_cruel_world.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "sends_telemetry_event": false
+}

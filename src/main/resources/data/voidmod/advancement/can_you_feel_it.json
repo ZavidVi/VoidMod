@@ -1,0 +1,45 @@
+{
+  "parent": "voidmod:tale_of_cruel_world",
+  "criteria": {
+    "found": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structures": "voidmod:grave"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "found"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:paper",
+      "components": {
+        "minecraft:item_model": "voidmod:advancement/can_you_feel_it"
+      }
+    },
+    "title": {
+      "translate": "advancements.voidmod.can_you_feel_it.title"
+    },
+    "description": {
+      "translate": "advancements.voidmod.can_you_feel_it.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "sends_telemetry_event": false
+}

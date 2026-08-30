@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " W ",
+    "WIW",
+    " W "
+  ],
+  "key": {
+    "W": "minecraft:white_wool",
+    "I": "voidmod:lightened_ingot"
+  },
+  "result": {
+    "id": "voidmod:lighted_wool",
+    "count": 2
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "property": "voidmod:cursed",
+    "on_true": {
+      "type": "minecraft:model",
+      "model": "voidmod:item/flint_and_steel_cursed"
+    },
+    "on_false": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/flint_and_steel"
+    }
+  }
+}

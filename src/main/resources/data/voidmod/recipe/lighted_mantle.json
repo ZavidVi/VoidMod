@@ -1,0 +1,17 @@
+{
+  "type": "voidmod:essence_crafting",
+  "category": "equipment",
+  "pattern": [
+    "I I",
+    "IWI",
+    "WWW"
+  ],
+  "key": {
+    "W": "voidmod:lighted_wool",
+    "I": "voidmod:lightened_ingot"
+  },
+  "result": {
+    "id": "voidmod:lighted_mantle"
+  },
+  "essence": 5
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:bone",
+    "minecraft:coal",
+    "voidmod:pale_ingot"
+  ],
+  "result": {
+    "id": "voidmod:black_bone"
+  }
+}

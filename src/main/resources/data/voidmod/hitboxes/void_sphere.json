@@ -1,0 +1,11 @@
+{
+	"elements": [
+		{
+			"name": "everyone",
+			"pos": [0, 0, 0],
+			"width": 9,
+			"height": 8,
+			"ref": "everyone_hitbox"
+		}
+	]
+}

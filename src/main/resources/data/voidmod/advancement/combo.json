@@ -1,0 +1,36 @@
+{
+  "parent": "voidmod:tale_of_cruel_world",
+  "criteria": {
+    "got": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#voidmod:scythes"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "got"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "voidmod:iron_scythe"
+    },
+    "title": {
+      "translate": "advancements.voidmod.combo.title"
+    },
+    "description": {
+      "translate": "advancements.voidmod.combo.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " I ",
+    "NSN",
+    " S "
+  ],
+  "key": {
+    "I": "#voidmod:ice",
+    "N": "#voidmod:snow",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "voidmod:rime"
+  }
+}

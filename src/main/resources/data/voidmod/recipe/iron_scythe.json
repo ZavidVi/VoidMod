@@ -1,0 +1,17 @@
+{
+  "type": "voidmod:essence_crafting",
+  "category": "equipment",
+  "pattern": [
+    "XX ",
+    "S X",
+    "S  "
+  ],
+  "key": {
+    "X": "minecraft:iron_ingot",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "voidmod:iron_scythe"
+  },
+  "essence": 10
+}

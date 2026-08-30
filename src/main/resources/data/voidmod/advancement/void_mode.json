@@ -1,0 +1,32 @@
+{
+  "criteria": {
+    "code": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "code"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:paper",
+      "components": {
+        "minecraft:item_model": "voidmod:advancement/void_mode"
+      }
+    },
+    "title": {
+      "translate": "advancements.voidmod.void_mode.title"
+    },
+    "description": {
+      "translate": "advancements.voidmod.void_mode.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "voidmod:block/void_block"
+  },
+  "sends_telemetry_event": false
+}

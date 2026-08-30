@@ -1,0 +1,8 @@
+/build/
+/.idea/
+/.gradle/
+/run/
+/_to_delete/
+*.log
+output.txt
+test*_output*.txt

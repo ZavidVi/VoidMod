@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "voidmod:lighted_fountain",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "voidmod:cursed_random_spread",
+    "spacing": 32,
+    "separation": 20,
+    "salt": 987234911
+  }
+}

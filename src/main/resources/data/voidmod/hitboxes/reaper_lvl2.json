@@ -1,0 +1,25 @@
+{
+	"elements": [
+		{
+			"name": "head",
+			"pos": [0, 24, 0],
+			"width": 10,
+			"height": 9,
+			"ref": "head_hitbox"
+		},
+		{
+			"name": "bot",
+			"pos": [0, 12, 0],
+			"width": 10,
+			"height": 12,
+			"ref": "bot_hitbox"
+		},
+		{
+			"name": "bot2",
+			"pos": [0, 0, 0],
+			"width": 10,
+			"height": 12,
+			"ref": "bot2_hitbox"
+		}
+	]
+}

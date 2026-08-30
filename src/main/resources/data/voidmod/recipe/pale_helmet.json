@@ -1,0 +1,15 @@
+{
+  "type": "voidmod:essence_crafting",
+  "category": "equipment",
+  "pattern": [
+    "XXX",
+    "X X"
+  ],
+  "key": {
+    "X": "voidmod:pale_ingot"
+  },
+  "result": {
+    "id": "voidmod:pale_helmet"
+  },
+  "essence": 2
+}

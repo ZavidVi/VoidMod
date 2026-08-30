@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "voidmod:grave",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "voidmod:cursed_random_spread",
+    "spacing": 20,
+    "separation": 6,
+    "salt": 418822307
+  }
+}

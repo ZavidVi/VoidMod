@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "voidmod:grave_grass_block",
+    "voidmod:grave_podzol",
+    "voidmod:grave_sand",
+    "voidmod:grave_red_sand",
+    "voidmod:grave_snow",
+    "voidmod:grave_dirt"
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "entity.void_sphere.hurt": {
+    "subtitle": "subtitles.voidmod.void_sphere.hurt",
+    "sounds": [
+      "voidmod:entity/void_sphere/hurt"
+    ]
+  },
+  "entity.void_sphere.death": {
+    "subtitle": "subtitles.voidmod.void_sphere.death",
+    "sounds": [
+      "voidmod:entity/void_sphere/death"
+    ]
+  },
+  "entity.vrauj.flight": {
+    "subtitle": "subtitles.voidmod.vrauj.flight",
+    "sounds": [
+      "voidmod:entity/vrauj/flight"
+    ]
+  },
+  "entity.vrauj.shoot": {
+    "subtitle": "subtitles.voidmod.vrauj.shoot",
+    "sounds": [
+      "voidmod:entity/vrauj/shoot"
+    ]
+  },
+  "entity.vrauj.hurt": {
+    "subtitle": "subtitles.voidmod.vrauj.hurt",
+    "sounds": [
+      "voidmod:entity/vrauj/hurt"
+    ]
+  },
+  "entity.reaper1.spawn": {
+    "subtitle": "subtitles.voidmod.reaper.spawn",
+    "sounds": [
+      "voidmod:entity/reaper/phase1/spawn"
+    ]
+  },
+  "entity.reaper1.attack": {
+    "subtitle": "subtitles.voidmod.reaper.attack",
+    "sounds": [
+      "voidmod:entity/reaper/phase1/attack"
+    ]
+  },
+  "entity.reaper1.death": {
+    "subtitle": "subtitles.voidmod.reaper.death",
+    "sounds": [
+      "voidmod:entity/reaper/phase1/death"
+    ]
+  },
+  "entity.reaper1.hurt": {
+    "subtitle": "subtitles.voidmod.reaper.hurt",
+    "sounds": [
+      "voidmod:entity/reaper/phase1/hurt"
+    ]
+  },
+  "entity.reaper2.spawn": {
+    "subtitle": "subtitles.voidmod.reaper.spawn",
+    "sounds": [
+      "voidmod:entity/reaper/phase2/spawn"
+    ]
+  },
+  "entity.reaper2.attack1": {
+    "subtitle": "subtitles.voidmod.reaper.attack",
+    "sounds": [
+      "voidmod:entity/reaper/phase2/attack1"
+    ]
+  },
+  "entity.reaper2.attack2": {
+    "subtitle": "subtitles.voidmod.reaper.dash",
+    "sounds": [
+      "voidmod:entity/reaper/phase2/attack2"
+    ]
+  },
+  "entity.reaper2.hurt": {
+    "subtitle": "subtitles.voidmod.reaper.hurt",
+    "sounds": [
+      "voidmod:entity/reaper/phase2/hurt"
+    ]
+  },
+  "entity.reaper3.spawn": {
+    "subtitle": "subtitles.voidmod.reaper.spawn",
+    "sounds": [
+      "voidmod:entity/reaper/phase3/spawn"
+    ]
+  },
+  "entity.reaper3.attack1": {
+    "subtitle": "subtitles.voidmod.reaper.attack",
+    "sounds": [
+      "voidmod:entity/reaper/phase3/attack1"
+    ]
+  },
+  "entity.reaper3.attack2": {
+    "subtitle": "subtitles.voidmod.reaper.dash",
+    "sounds": [
+      "voidmod:entity/reaper/phase3/attack2"
+    ]
+  },
+  "entity.reaper3.special": {
+    "subtitle": "subtitles.voidmod.reaper.special",
+    "sounds": [
+      "voidmod:entity/reaper/phase3/special"
+    ]
+  },
+  "entity.reaper3.hurt": {
+    "subtitle": "subtitles.voidmod.reaper.hurt",
+    "sounds": [
+      "voidmod:entity/reaper/phase3/hurt"
+    ]
+  },
+  "entity.reaper3.projectile": {
+    "subtitle": "subtitles.voidmod.reaper.projectile",
+    "sounds": [
+      "voidmod:entity/reaper/phase3/projectile"
+    ]
+  },
+  "entity.reaper3.explosion": {
+    "subtitle": "subtitles.voidmod.reaper.explosion",
+    "sounds": [
+      "voidmod:entity/reaper/phase3/explosion"
+    ]
+  },
+  "music.reaper_phase2": {
+    "sounds": [
+      {
+        "name": "voidmod:music/reaper_phase2",
+        "stream": true
+      }
+    ]
+  },
+  "music.reaper_phase3": {
+    "sounds": [
+      {
+        "name": "voidmod:music/reaper_phase3",
+        "stream": true
+      }
+    ]
+  },
+  "music.light_fountain": {
+    "sounds": [
+      {
+        "name": "voidmod:music/light_fountain",
+        "stream": true
+      }
+    ]
+  },
+  "event.world_flame_fades": {
+    "subtitle": "subtitles.voidmod.world_flame_fades",
+    "sounds": [
+      {
+        "name": "voidmod:event/world_flame_fades",
+        "stream": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "voidmod:gold_scythe",
+    "voidmod:iron_scythe",
+    "voidmod:diamond_scythe",
+    "voidmod:pale_scythe",
+    "voidmod:netherite_scythe",
+    "voidmod:reaper_scythe"
+  ]
+}

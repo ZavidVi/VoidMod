@@ -1,0 +1,43 @@
+{
+  "parent": "voidmod:key_to_truth",
+  "criteria": {
+    "killed": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "voidmod:reaper_lvl3"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "killed"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:paper",
+      "components": {
+        "minecraft:item_model": "voidmod:advancement/restoring_balance"
+      }
+    },
+    "title": {
+      "translate": "advancements.voidmod.restoring_balance.title"
+    },
+    "description": {
+      "translate": "advancements.voidmod.restoring_balance.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "sends_telemetry_event": false
+}

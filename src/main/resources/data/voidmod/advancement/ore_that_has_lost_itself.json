@@ -1,0 +1,36 @@
+{
+  "parent": "voidmod:tale_of_cruel_world",
+  "criteria": {
+    "got": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "voidmod:raw_pale"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "got"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "voidmod:raw_pale"
+    },
+    "title": {
+      "translate": "advancements.voidmod.ore_that_has_lost_itself.title"
+    },
+    "description": {
+      "translate": "advancements.voidmod.ore_that_has_lost_itself.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "sends_telemetry_event": false
+}

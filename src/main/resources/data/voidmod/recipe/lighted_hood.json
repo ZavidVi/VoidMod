@@ -1,0 +1,16 @@
+{
+  "type": "voidmod:essence_crafting",
+  "category": "equipment",
+  "pattern": [
+    "WWW",
+    "I I"
+  ],
+  "key": {
+    "W": "voidmod:lighted_wool",
+    "I": "voidmod:lightened_ingot"
+  },
+  "result": {
+    "id": "voidmod:lighted_hood"
+  },
+  "essence": 3
+}

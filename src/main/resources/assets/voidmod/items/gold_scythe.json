@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "voidmod:item/gold_scythe",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

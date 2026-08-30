@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "voidmod:item/advancement/tale_of_cruel_world"
+  }
+}

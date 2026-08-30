@@ -1,0 +1,36 @@
+{
+  "parent": "voidmod:can_you_feel_it",
+  "criteria": {
+    "got": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "voidmod:black_bone"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "got"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "voidmod:black_bone"
+    },
+    "title": {
+      "translate": "advancements.voidmod.key_to_truth.title"
+    },
+    "description": {
+      "translate": "advancements.voidmod.key_to_truth.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "sends_telemetry_event": false
+}

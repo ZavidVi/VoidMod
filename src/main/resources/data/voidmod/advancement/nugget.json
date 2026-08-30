@@ -1,0 +1,32 @@
+{
+  "parent": "voidmod:something_new",
+  "criteria": {
+    "code": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "code"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "id": "minecraft:paper",
+      "components": {
+        "minecraft:item_model": "voidmod:advancement/nugget"
+      }
+    },
+    "title": {
+      "translate": "advancements.voidmod.nugget.title"
+    },
+    "description": {
+      "translate": "advancements.voidmod.nugget.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "sends_telemetry_event": false
+}

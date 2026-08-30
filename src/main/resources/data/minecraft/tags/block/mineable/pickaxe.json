@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "voidmod:extramundane_forge",
+    "voidmod:void_block",
+    "voidmod:cleaned_block",
+    "voidmod:pale_cauldron",
+    "voidmod:grave_stone",
+    "voidmod:pale_ore",
+    "voidmod:deepslate_pale_ore"
+  ]
+}

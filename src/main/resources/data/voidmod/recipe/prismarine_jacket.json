@@ -1,0 +1,17 @@
+{
+  "type": "voidmod:essence_crafting",
+  "category": "equipment",
+  "pattern": [
+    "S S",
+    "SSS",
+    "CCC"
+  ],
+  "key": {
+    "S": "minecraft:prismarine_shard",
+    "C": "minecraft:prismarine_crystals"
+  },
+  "result": {
+    "id": "voidmod:prismarine_jacket"
+  },
+  "essence": 5
+}

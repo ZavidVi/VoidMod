@@ -1,0 +1,15 @@
+{
+  "name": "voidmod:lighted_fountain/start",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "voidmod:lighted_fountain",
+        "processors": "voidmod:lighted_fountain_water",
+        "projection": "rigid"
+      }
+    }
+  ]
+}
