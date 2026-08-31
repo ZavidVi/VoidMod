@@ -23,9 +23,9 @@ public class ReaperSpecialAttackGoal extends Goal {
 
     private static final int MAX_DESCENT_TICKS = 60;
 
-    private static final int FUNNEL_INTERVAL = 3;
+    private static final int FUNNEL_INTERVAL = 2;
 
-    private static final int FUNNEL_BURST = 8;
+    private static final int FUNNEL_BURST = 7;
 
     private static final double FUNNEL_RADIUS = 10.0D;
 

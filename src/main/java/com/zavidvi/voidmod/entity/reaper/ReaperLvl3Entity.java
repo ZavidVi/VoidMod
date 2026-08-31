@@ -46,7 +46,7 @@ public class ReaperLvl3Entity extends ReaperEntity {
 
     private static final int ATTACK_TICKS = 12;
 
-    private static final double SWING_SPEED_FACTOR = 0.5D;
+    private static final double SWING_SPEED_FACTOR = 1.0D / 3.0D;
 
     private static final float FLYING_ACCELERATION = 0.198F;
 

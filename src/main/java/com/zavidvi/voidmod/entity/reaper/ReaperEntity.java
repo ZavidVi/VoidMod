@@ -36,6 +36,9 @@ public abstract class ReaperEntity extends Monster implements GeoEntity {
     private static final EntityDataAccessor<Integer> ATTACK_STATE =
             SynchedEntityData.defineId(ReaperEntity.class, EntityDataSerializers.INT);
 
+    private static final EntityDataAccessor<java.util.Optional<net.minecraft.core.BlockPos>> GRAVE_POS =
+            SynchedEntityData.defineId(ReaperEntity.class, EntityDataSerializers.OPTIONAL_BLOCK_POS);
+
     public static final int ATTACK_NONE = 0;
     public static final int ATTACK_PRIMARY = 1;
     public static final int ATTACK_CRIT = 2;
@@ -58,6 +61,7 @@ public abstract class ReaperEntity extends Monster implements GeoEntity {
         super.defineSynchedData(builder);
         builder.define(SPAWN_TICKS, 0);
         builder.define(ATTACK_STATE, ATTACK_NONE);
+        builder.define(GRAVE_POS, java.util.Optional.empty());
     }
 
     public int getAttackState() {
@@ -131,6 +135,27 @@ public abstract class ReaperEntity extends Monster implements GeoEntity {
             this.bossEvent.setProgress(this.getHealth() / this.getMaxHealth());
             tickRegression();
             dropTargetOutOfChaseRange();
+            if (this.level() instanceof ServerLevel serverLevel) {
+                tickArena(serverLevel);
+            }
+        }
+    }
+
+    private void tickArena(ServerLevel level) {
+        net.minecraft.core.BlockPos gravePos = getGravePos();
+        if (gravePos == null) return;
+
+        for (ServerPlayer player : level.players()) {
+            if (!isValidTarget(player)) {
+                this.arenaPlayers.remove(player.getUUID());
+                continue;
+            }
+
+            if (ReaperArena.isInside(gravePos, player)) {
+                this.arenaPlayers.add(player.getUUID());
+            } else if (this.arenaPlayers.contains(player.getUUID())) {
+                ReaperArena.pushInside(level, player, gravePos);
+            }
         }
     }
 
@@ -263,8 +288,9 @@ public abstract class ReaperEntity extends Monster implements GeoEntity {
     public void addAdditionalSaveData(ValueOutput output) {
         super.addAdditionalSaveData(output);
         output.putInt("SpawnTicks", this.entityData.get(SPAWN_TICKS));
-        if (this.gravePos != null) {
-            output.putLong("GravePos", this.gravePos.asLong());
+        net.minecraft.core.BlockPos pos = getGravePos();
+        if (pos != null) {
+            output.putLong("GravePos", pos.asLong());
         }
     }
 
@@ -272,13 +298,13 @@ public abstract class ReaperEntity extends Monster implements GeoEntity {
     public void readAdditionalSaveData(ValueInput input) {
         super.readAdditionalSaveData(input);
         this.entityData.set(SPAWN_TICKS, input.getIntOr("SpawnTicks", 0));
-        this.gravePos = input.getLong("GravePos").map(net.minecraft.core.BlockPos::of).orElse(null);
+        setGravePos(input.getLong("GravePos").map(net.minecraft.core.BlockPos::of).orElse(null));
         if (hasCustomName()) {
             this.bossEvent.setName(this.getDisplayName());
         }
     }
 
-    private net.minecraft.core.BlockPos gravePos;
+    private final java.util.Set<java.util.UUID> arenaPlayers = new java.util.HashSet<>();
 
     public abstract int phase();
 
@@ -291,15 +317,16 @@ public abstract class ReaperEntity extends Monster implements GeoEntity {
     public static final double GRAVE_CHASE_RADIUS = 48.0D;
 
     public void setGravePos(net.minecraft.core.BlockPos gravePos) {
-        this.gravePos = gravePos == null ? null : gravePos.immutable();
+        this.entityData.set(GRAVE_POS, java.util.Optional.ofNullable(gravePos == null ? null : gravePos.immutable()));
     }
 
     public net.minecraft.core.BlockPos getGravePos() {
-        return this.gravePos;
+        return this.entityData.get(GRAVE_POS).orElse(null);
     }
 
     public Vec3 graveAnchor() {
-        return this.gravePos == null ? null : Vec3.atBottomCenterOf(this.gravePos);
+        net.minecraft.core.BlockPos gravePos = getGravePos();
+        return gravePos == null ? null : Vec3.atBottomCenterOf(gravePos);
     }
 
     public boolean isWithinGraveLeash(net.minecraft.world.entity.Entity entity) {
@@ -317,8 +344,9 @@ public abstract class ReaperEntity extends Monster implements GeoEntity {
     }
 
     public void despawn(ServerLevel level) {
-        if (this.gravePos != null
-                && level.getBlockEntity(this.gravePos)
+        net.minecraft.core.BlockPos gravePos = getGravePos();
+        if (gravePos != null
+                && level.getBlockEntity(gravePos)
                         instanceof com.zavidvi.voidmod.block.GraveBlockEntity grave) {
             grave.onReaperDespawned();
         }
@@ -327,9 +355,10 @@ public abstract class ReaperEntity extends Monster implements GeoEntity {
 
     @Override
     public void remove(RemovalReason reason) {
-        if (reason == RemovalReason.KILLED && this.gravePos != null
+        net.minecraft.core.BlockPos gravePos = getGravePos();
+        if (reason == RemovalReason.KILLED && gravePos != null
                 && this.level() instanceof ServerLevel serverLevel
-                && serverLevel.getBlockEntity(this.gravePos)
+                && serverLevel.getBlockEntity(gravePos)
                         instanceof com.zavidvi.voidmod.block.GraveBlockEntity grave) {
             grave.onReaperRemoved(serverLevel, phase(), this.position(), getTarget());
         }
@@ -337,7 +366,8 @@ public abstract class ReaperEntity extends Monster implements GeoEntity {
     }
 
     private void tickRegression() {
-        if (phase() <= 1 || this.gravePos == null || isSpawning()) return;
+        net.minecraft.core.BlockPos gravePos = getGravePos();
+        if (phase() <= 1 || gravePos == null || isSpawning()) return;
 
         if (getTarget() != null || this.hurtTime > 0) {
             this.untouchedTicks = 0;
@@ -348,7 +378,7 @@ public abstract class ReaperEntity extends Monster implements GeoEntity {
         this.untouchedTicks = 0;
 
         if (this.level() instanceof ServerLevel serverLevel
-                && serverLevel.getBlockEntity(this.gravePos)
+                && serverLevel.getBlockEntity(gravePos)
                         instanceof com.zavidvi.voidmod.block.GraveBlockEntity grave) {
             grave.regressToFirstPhase(serverLevel, this);
         }
